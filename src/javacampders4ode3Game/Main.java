@@ -24,12 +24,13 @@ public class Main {
 		discountCoupen.setDiscount(10);
 		
 		UserManager userManager=new UserManager();
+		Edevlet edevlet1=new Edevlet();
 		
-		userManager.add(user1, new Edevlet());
+		userManager.add(user1,edevlet1);
 		
 		SellManager sellManager = new SellManager();
 		
-		sellManager.sell(user1, product, discountCoupen,new Edevlet());
+		sellManager.sell(user1, product, discountCoupen,edevlet1);
 
 	}
 
